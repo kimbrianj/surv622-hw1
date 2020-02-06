@@ -11,6 +11,7 @@ output:
 To begin, we need to tell R what packages to load, that we will be using in our code below. Note that because the RecordLinkage package is no longer available from CRAN, we are using the latest version that we've downloaded.
 ```{r warning=FALSE, message=FALSE}
 if (!requireNamespace("RecordLinkage", quietly = TRUE)) {
+  install.packages(c('DBI', 'RSQLite', 'ff', 'ffbase', 'e1071', 'ada', 'ipred', 'evd', 'data.table', 'xtable'))
   install.packages('RecordLinkage_0.4-11.2.tar.gz', repos = NULL, dependencies = TRUE, type = 'source')
 }
 library('RecordLinkage', quietly=TRUE)
