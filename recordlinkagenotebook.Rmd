@@ -67,8 +67,8 @@ levenshteinSim(pho1,pho2)
 
 Now we will read in the data.  Note the two slashes are required in Windows file paths.  You will need to replace the filepath with where you stored the file on your computer. Also, some code that adjusts the column names for compliance with the big data command requirements is included.
 ```{r cache = TRUE}
-sdfilepath = "~/Documents/Courses/SURV 623/Assignments/surveydata.csv"
-adfilepath = "~/Documents/Courses/SURV 623/Assignments/admindata.csv"
+sdfilepath = "surveydata.csv"
+adfilepath = "admindata.csv"
 
 surveydata <- read.csv(sdfilepath,header=TRUE,sep=",",stringsAsFactors = FALSE)
 surveydata <- data.frame(surveydata)
@@ -328,7 +328,7 @@ finalpairs = getPairs(second_class2, filter.link="link", single.rows=TRUE)
 ```
 
 ```{r}
-csvfilepath="~/Documents/Courses/SURV 623/Assignments/finalpairs.csv"
+csvfilepath="finalpairs.csv"
 write.csv(finalpairs, file=csvfilepath)
 ```
 
