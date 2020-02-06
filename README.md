@@ -1,1 +1,1 @@
-# surv622-hw1
+# SURV 622 Record Linkage Exercise
